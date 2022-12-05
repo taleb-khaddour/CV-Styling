@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header div{
+    background-color: #999999;
+    display: flex;
+    color: #ff0000;
+    padding-left: 10rem;
+}
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact{
+  position: absolute;
+  top: 1rem;
+  left: 70%;
+  width: 30%;
+  line-height: 1.5rem;}
+
+#contact h3{
+    position: absolute;
+    left: -7000px;
+}
+
+#contact a{
+  color: #ff0000;
+  text-decoration: none;
+  padding-left: 5px;
+  width: 100%;
+}
+
+dl {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding: 0;
+    margin: 0
+  }
+  dt {
+    float: left;
+    width: 32%;
+    background: white;
+    padding: 0;
+    margin: 0
+  }
+  dd {
+    float: left;
+    width: 50%;
+    background: white;
+    padding: 0;
+    margin: 0
+  }
+
+  .contact-type{
+    background-color: #ff0000;
+    color: white;
+  }
+
+  .contact-value{
+    background-color: #000000;
+    width: 68%;
+  }
+
+
+  #about{
+    display: inline-block;
+    width: 50%;
+  }
+
+  .skill{
+    background-color: #cccccc;
+    margin-bottom: 7px;
+    padding: 5px;
+  }
+
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 10rem;
+  }
+  
+  .content section{
+    position: relative;
+    flex: 0 0 50%;
+  } 
+ 
+  .content section h3 {
+    padding: 0 0 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #b4b4b4;
+    margin-top: -40px;
+}
+
+.skill span{
+  background-color: #ff0000;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+
+.skills-primary::before {
+  content: "Main";
+  display: block;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+.skills-secondary::before {
+  content: "Other";
+  display: block;
+  margin-top: 15px;
+  opacity: 1;
+}
+
+.skills-secondary .skill{
+  opacity: 70%;
+}
+
+
+[data-skill="5"] span {
+  width: 50%;
+}
+
+[data-skill="3"] span {
+  width: 40%;
+}
+
+[data-skill="1"] span {
+  width: 7%;
+}
+
+[data-skill="9"] span {
+  width: 85%;
+}
+
+[data-skill="7"] span {
+  width: 70%;
+}
+
+.experience-type{
+  color: #ff0000;
+}
+
+.experience-institution{
+  color: #ff0000;
+  font-weight: 200;
+}
+
+.experience-institution::before{
+  content: "@";
+  margin-right: 5px;
+  font-weight: 200;
+}
+
+p{
+  padding-right: 3rem;
+}
+
+.experience-details{
+  color: #999999;
+}
+
+.experience-details::before{
+  content: "In";
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.experience h4{
+  margin-bottom: 0;
+}
+
+.content section h3::before {
+  content: ".";  
+  color: red;
+  font-weight: bold; 
+  font-size: 100px;
+  width: 1em; 
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 1120px) {
+  #contact{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .contact-value{
+    background-color: white;
+    width: 100px;
+  }
+
+  #contact h3{
+    position: relative;
+    left: 0px;
+}
+
+.content section{
+  position: relative;
+  flex: 0 0 50%;
+} 
+header h1{
+  margin-top: 0;
+}
+}
+@media only screen and (max-width: 750px) {
+  
+  header div{
+    display: block;
+  }
+  header h1{
+    margin-top: 0;
+  }
+}
